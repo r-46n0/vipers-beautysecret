@@ -311,14 +311,6 @@ section { padding: 80px 0; }
 .hero-logo img { box-shadow: 14px 14px 0 var(--rosa); }
 .hero-logo img { position: relative; border: 1px solid var(--nero); border-radius: 24px; }
 .card { position: relative; }
-.card::before {
-  content: "";
-  position: absolute;
-  top: -12px; left: 50%;
-  width: 150px; height: 22px;
-  transform: translateX(-50%);
-  background: var(--bianco) url("../img/pizzo/bordo-3.png") center / auto 100% repeat-x;
-}
 
 .tile .cap {
   position: absolute;
