@@ -40,11 +40,11 @@ a { color: inherit; text-decoration: none; }
 }
 .bow {
   position: absolute;
-  top: -22px;
+  top: -26px;
   left: 50%;
   transform: translateX(-50%);
-  width: 64px;
-  height: 40px;
+  width: 78px;
+  height: auto;
 }
 .brand {
   display: inline-block;
@@ -297,4 +297,48 @@ section { padding: 80px 0; }
   .hero-grid, .grid3, .contact-grid, .menu, .gallery { grid-template-columns: 1fr; }
   .menu .col { padding: 0; border: 0 !important; }
   .nav { flex-wrap: wrap; gap: 18px; }
+}
+
+/* ---------- pizzo e fiocchi ---------- */
+.divider { display: flex; align-items: center; gap: 18px; width: min(1100px, 90%); margin: 0 auto; padding: 8px 0; }
+.divider img { width: 70px; flex: none; }
+.lace-line {
+  flex: 1;
+  height: 26px;
+  background: var(--nero) url("../img/pizzo.jpg") center / 340px auto;
+  border-radius: 999px;
+}
+.page-head { position: relative; padding-bottom: 60px; }
+.page-head::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 18px;
+  background: var(--nero) url("../img/pizzo.jpg") center / 300px auto;
+}
+.hero-logo { overflow: visible; border: 0; box-shadow: none; }
+.hero-logo::before {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  border-radius: 34px;
+  background: var(--nero) url("../img/pizzo.jpg") center / 360px auto;
+}
+.hero-logo img { position: relative; border: 1px solid var(--nero); border-radius: 24px; }
+.hero-logo::after {
+  content: "";
+  position: absolute;
+  top: -38px; left: 50%;
+  width: 90px; height: 57px;
+  transform: translateX(-50%);
+  background: url("../img/fiocco.svg") center / contain no-repeat;
+}
+.card { position: relative; }
+.card::before {
+  content: "";
+  position: absolute;
+  top: -15px; left: 50%;
+  width: 44px; height: 28px;
+  transform: translateX(-50%);
+  background: url("../img/fiocco.svg") center / contain no-repeat;
 }
