@@ -342,3 +342,18 @@ section { padding: 80px 0; }
   transform: translateX(-50%);
   background: url("../img/fiocco.svg") center / contain no-repeat;
 }
+
+.tile .cap {
+  position: absolute;
+  left: 14px; bottom: 14px;
+  font-style: normal;
+  font-family: var(--pixel);
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  background: rgba(253, 251, 247, .9);
+  border: 1px solid var(--nero);
+  border-radius: 999px;
+  padding: 3px 14px;
+}
+.lightbox .stage { position: relative; }
