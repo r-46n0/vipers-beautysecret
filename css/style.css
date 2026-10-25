@@ -27,10 +27,6 @@ a { color: inherit; text-decoration: none; }
 .wrap { width: min(1100px, 90%); margin: 0 auto; }
 
 /* ---------- header ---------- */
-.lace {
-  height: 34px;
-  background: var(--nero) url("../img/pizzo.jpg") center / 420px auto;
-}
 .site-header {
   position: relative;
   background: var(--bianco);
@@ -281,7 +277,6 @@ section { padding: 80px 0; }
 .site-footer .brand { margin-bottom: 10px; }
 .site-footer p { font-size: .85rem; }
 .site-footer .btn { margin: 20px 0; }
-.site-footer .lace { margin-top: 26px; }
 
 /* ---------- animazioni ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
@@ -313,13 +308,7 @@ section { padding: 80px 0; }
   background: url("../img/pizzo/bordo-3.png") center / auto 100% repeat-x;
 }
 .hero-logo { overflow: visible; border: 0; box-shadow: none; }
-.hero-logo::before {
-  content: "";
-  position: absolute;
-  inset: -16px;
-  border-radius: 34px;
-  background: var(--nero) url("../img/pizzo.jpg") center / 360px auto;
-}
+.hero-logo img { box-shadow: 14px 14px 0 var(--rosa); }
 .hero-logo img { position: relative; border: 1px solid var(--nero); border-radius: 24px; }
 .hero-logo::after {
   content: "";
