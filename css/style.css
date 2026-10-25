@@ -35,16 +35,14 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   background: var(--bianco);
   border-bottom: 1px solid var(--nero);
-  padding: 34px 0 18px;
+  padding: 26px 0 18px;
   text-align: center;
 }
 .bow {
-  position: absolute;
-  top: -26px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 78px;
+  display: block;
+  width: 70px;
   height: auto;
+  margin: 0 auto 10px;
 }
 .brand {
   display: inline-block;
@@ -280,7 +278,6 @@ section { padding: 80px 0; }
 
 /* ---------- footer ---------- */
 .site-footer { background: var(--bianco); border-top: 1px solid var(--nero); text-align: center; padding: 46px 0 36px; position: relative; }
-.site-footer .bow { top: -22px; }
 .site-footer .brand { margin-bottom: 10px; }
 .site-footer p { font-size: .85rem; }
 .site-footer .btn { margin: 20px 0; }
@@ -304,17 +301,16 @@ section { padding: 80px 0; }
 .divider img { width: 70px; flex: none; }
 .lace-line {
   flex: 1;
-  height: 26px;
-  background: var(--nero) url("../img/pizzo.jpg") center / 340px auto;
-  border-radius: 999px;
+  height: 30px;
+  background: url("../img/pizzo/bordo-3.png") center / auto 100% repeat-x;
 }
 .page-head { position: relative; padding-bottom: 60px; }
 .page-head::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  height: 18px;
-  background: var(--nero) url("../img/pizzo.jpg") center / 300px auto;
+  height: 26px;
+  background: url("../img/pizzo/bordo-3.png") center / auto 100% repeat-x;
 }
 .hero-logo { overflow: visible; border: 0; box-shadow: none; }
 .hero-logo::before {
@@ -357,3 +353,18 @@ section { padding: 80px 0; }
   padding: 3px 14px;
 }
 .lightbox .stage { position: relative; }
+
+.fringe {
+  height: 40px;
+  background: url("../img/pizzo/bordo-1.png") center top / auto 100% repeat-x;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -40px;
+  pointer-events: none;
+}
+.fringe.up { transform: scaleY(-1); margin: -40px 0 0; }
+.ill { display: block; width: 120px; height: 120px; margin: 0 auto 16px; transition: transform .5s; }
+.card:hover .ill { transform: rotate(-6deg) scale(1.05); }
+.menu h2 { display: flex; align-items: center; gap: 14px; }
+.menu h2 .ill { width: 64px; height: 64px; margin: 0; }
+img.avatar { background: none; }
